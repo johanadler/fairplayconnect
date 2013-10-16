@@ -14,6 +14,9 @@ public class LoginListener implements Listener {
 	@EventHandler(priority = EventPriority.HIGH)
     public void highLogin(PlayerLoginEvent event) {
 		Player player = event.getPlayer( );
-		String country = geo.getCountry(player.getAddress().getAddress()).getName();
+		String country = FairPlayConnect.geo.getCountry(player.getAddress().getAddress()).getName();
+		if(country.equals("Anonymous Proxy")) {
+			// TODO Cancel event, log to console
+		}
     }
 }

@@ -8,7 +8,7 @@ import uk.org.whoami.geoip.GeoIPTools;
 
 public final class FairPlayConnect extends JavaPlugin {
 
-	public GeoIPLookup geo = null;
+	static GeoIPLookup geo = null;
 	
 	@Override
     public void onEnable(){
