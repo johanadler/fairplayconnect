@@ -1,0 +1,7 @@
+# This determines the command prefix when there are conflicts (/name:home, /name:help, etc.)
+name: FairPlayConnect
+main: se.mors.fairplayconnect.FairPlayConnect
+version: 0.1
+description: Blocks connections from anonymous proxies
+author: johanadler
+softdepend: [GeoIPTools]
